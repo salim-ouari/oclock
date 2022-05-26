@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background: #1D1F20;
+
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 10%;
+    text-align: center;
+    color: white;
+
+}
+
+.ml {
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-timer-display {
+    width: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    --borderWidth: 4px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    color: white;
+    /* font-family: DS-Digital; */
+    font-size: 2rem;
+}
+
+.main-container:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f33232bb, #f93e3ebb, #ef4e7b, #ff5757bb, #eaeaea, #cbc9c9, #827f7f, #575656);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 821px) {
+    .main-container {
+        width: 375px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    .componant_control {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 391px) {
+    .main-container {
+        width: 300px;
+    }
+}

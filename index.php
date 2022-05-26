@@ -1,5 +1,15 @@
 <?php
 require 'header.php';
 ?>
+<main>
 
-<h1>accueil</h1>
+
+    <div class="index">
+        <h1>O'Clock</h1>
+        <img src="assets/undraw_time_management_re_tk5w.svg" alt="horloge">
+    </div>
+
+</main>
+<?php
+require 'footer.php';
+?>

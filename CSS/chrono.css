@@ -1,0 +1,66 @@
+.wrapper-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-timer-display {
+    width: 50px;
+}
+
+.input-numbers:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+.btn-warning {
+    color: rgba(240, 173, 78, 0.75);
+    border: 2px solid rgba(240, 173, 78, 0.75);
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-warning:hover {
+    color: #FFF;
+    background: rgb(240, 173, 78, 0.75);
+    border: 2px solid rgba(240, 173, 78, 0.75);
+}
+
+.btn-functional {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.laps-list-container {
+    height: 100px;
+    width: 100%;
+    font-family: Raleway;
+    align-self: baseline;
+    color: #FFF;
+    font-size: 1.3rem;
+    overflow-y: scroll;
+}
+
+.laps-list-container h4 {
+    margin-block-end: 0px;
+}
+
+.laps-list-container p {
+    margin-block-start: 0px;
+}

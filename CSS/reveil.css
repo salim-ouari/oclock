@@ -1,0 +1,122 @@
+input {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1vw;
+
+}
+
+#alarm {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+
+}
+
+#clock {
+    padding-bottom: 10%;
+}
+
+#alarm-input {
+
+    font-size: 2vw;
+    padding-left: 2%;
+}
+
+#alarm-text {
+    text-align: center;
+    font-size: 1vw;
+
+}
+
+input::placeholder {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5vw;
+    position: relative;
+    top: 5%;
+    left: 2%;
+
+}
+
+.passed {
+    margin-left: 4px;
+    margin-top: 15px;
+    color: red !important;
+}
+
+li {
+    margin-top: 3%;
+    margin-left: 4px;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+
+.controls {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.button {
+    border-radius: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+    width: 40%;
+    font-size: 1.2vw;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+#alarm-list {
+    color: white;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+@media (max-width: 821px) {
+    #alarm {
+        justify-content: space-evenly;
+    }
+
+    .controls {
+        width: 375px;
+        justify-content: space-evenly;
+    }
+
+    .button {
+        font-size: 2.8vw;
+    }
+
+    #alarm-text {
+        font-size: 2.2vw;
+    }
+
+    input::placeholder {
+
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 391px) {
+    #alarm {
+        justify-content: space-evenly
+    }
+
+    #alarm-text {
+        font-size: 2.2vw;
+    }
+
+    input::placeholder {
+
+        font-size: 2.2vw;
+    }
+
+    .controls {
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .button {
+        font-size: 2.8vw;
+    }
+}

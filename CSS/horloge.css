@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+@import url(https://allfont.net/allfont.css?fonts=ds-digital);
+
+h4 {
+    margin-bottom: 15%;
+}
+
+.buttons-container {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Raleway-SemiBold;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+}
+
+.btn-success {
+    color: rgba(103, 192, 103, 0.75);
+    border: 2px solid rgba(103, 192, 103, 0.75);
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-success:hover {
+    color: #FFF;
+    background: rgb(103, 192, 103, 0.75);
+    border: 2px solid rgb(103, 192, 103, 0.75);
+}
+
+.btn-danger {
+    color: rgba(217, 83, 78, 0.75);
+    border: 2px solid rgba(217, 83, 78, 0.75);
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-danger:hover {
+    color: #FFF;
+    background: rgba(217, 83, 78, 0.75);
+    border: 2px solid rgba(217, 83, 78, 0.75);
+}
+
+
+
+.functional-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wrapper-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 391px) {
+
+    .main-container {
+        width: 300px;
+    }
+}

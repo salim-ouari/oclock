@@ -11,7 +11,7 @@
 
 .nav a {
     float: left;
-    color: #0e1315;
+    color: #fff;
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -26,21 +26,15 @@
 }
 
 .burger {
-    color: black;
+    color: white;
 }
 
 .burger:active {
-    color: white;
-}
-
-.nav a:nth-child(5):hover {
-    background-color: #ff0256;
-    color: white;
-    transition: .3s;
+    color: black;
 }
 
 .nav a.home {
-    background-color: black;
+    background-color: rgb(213, 69, 69);
     color: white;
 }
 
